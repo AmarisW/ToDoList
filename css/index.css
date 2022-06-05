@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: rgba(235, 208, 209,.3);
+}
+
+header {
+  padding: 10px 0;
+  height: 50px;
+  background-image: linear-gradient(to right,#d9a7c7,#fffcdc);
+  /* background: rgb(220, 173, 201); */
+  /* background: rgba(47, 47, 47, 0.98); */
+}
+header h1 {
+  text-align: center;
+  color: rgb(219, 171, 200);
+}
+
+.box {
+  margin: 0 auto;
+}
+
+label {
+  float: left;
+  width: 100px;
+  line-height: 50px;
+  color: #ddd;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#title {
+  width: 100%;
+  height: 20px;
+  padding: 10px 0;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  text-indent: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(229, 182, 250, 0.4),
+    0 1px 6px rgba(231, 174, 236, 0.8) inset;
+  border: none;
+  background-color: #efbedd5b;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+h2 {
+  position: relative;
+}
+
+span {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  display: inline-block;
+  padding: 0 5px;
+  height: 20px;
+  border-radius: 20px;
+  background: #e6e6fa;
+  line-height: 22px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li input {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  
+}
+
+li.completed p {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+li p input {
+  top: 3px;
+  left: 40px;
+  width: 70%;
+  height: 20px;
+  line-height: 14px;
+  text-indent: 5px;
+  font-size: 14px;
+}
+
+li {
+  height: 32px;
+  line-height: 32px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0 45px;
+  border-radius: 3px;
+  border-left: 5px solid rgba(224, 182, 203, 0.8);
+  box-shadow: 0 1px 2px rgba(251, 243, 218);
+}
+
+ol li {
+  cursor: move;
+}
+
+ul li {
+  border-left: 5px solid rgb(243, 180, 245);
+  opacity: 0.5;
+  
+}
+
+li a {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 6px double #fff;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  background: rgba(246, 168, 149, 0.564) url('../images/remove.png') no-repeat center;
+  background-size: 80%;
+}
+
+footer {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+  color: #999;
+}
+
+@media screen and (max-device-width: 620px) {
+  section,
+  .box {
+    width: 96%;
+    padding: 0 2%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  section,
+  .box {
+    width: 600px;
+    padding: 0 10px;
+  }
+}
+
+.del{
+  text-decoration: line-through;
+}
+
